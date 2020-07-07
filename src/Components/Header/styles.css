@@ -1,0 +1,36 @@
+#header-wrapper {
+  background: #d36462;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+#header-nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header-link {
+  margin-right: 10px;
+  padding: 3px 7px 3px 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */

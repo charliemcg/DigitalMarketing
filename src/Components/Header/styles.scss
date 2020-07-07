@@ -1,0 +1,22 @@
+@import "../../colors.scss";
+
+#header-wrapper {
+  background: $mainColor;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+#header-nav-bar {
+  display: flex;
+  align-items: flex-end;
+}
+.header-link {
+  margin-right: 10px;
+  padding: 3px 7px 3px 7px;
+  display: flex;
+  font-size: 20px;
+  border-radius: 5px;
+  color: $white;
+  font-family: Arial, Helvetica, sans-serif;
+}
