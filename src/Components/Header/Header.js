@@ -8,11 +8,9 @@ export default function Header() {
     <div id="header-wrapper">
       <img src={logoImg} alt="Company Logo" />
       <div id="header-nav-bar">
-        <div className="header-link">{strings.home}</div>
-        <div className="header-link">{strings.services}</div>
-        <div className="header-link">{strings.caseStudies}</div>
-        <div className="header-link">{strings.testimonials}</div>
-        <div className="header-link">{strings.contact}</div>
+        {strings.links.map((string) => (
+          <div className="header-link">{string}</div>
+        ))}
       </div>
     </div>
   );

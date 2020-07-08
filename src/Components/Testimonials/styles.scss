@@ -1,0 +1,26 @@
+@import "../../colors.scss";
+
+#testimonials-wrapper {
+  background: $mainColor;
+  color: $white;
+  display: flex;
+}
+#testimonial-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#testimonial-company,
+#testimonial-description {
+  text-align: center;
+}
+#testimonial-company {
+  font-size: 40px;
+  margin: 20px;
+}
+#testimonial-description {
+  width: 60%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
