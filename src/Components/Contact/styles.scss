@@ -1,14 +1,15 @@
 @import "../../colors.scss";
 
 #contact-wrapper {
-  background-color: $mainColor;
+  // background-color: $mainColor;
+  background: $white;
   display: flex;
 }
 #contact-form-wrapper {
   flex: 3;
 }
 #contact-title-wrapper {
-  color: $white;
+  color: $fontDarkGrey;
   margin: 1%;
   font-size: 35px;
 }
@@ -17,6 +18,7 @@
   display: flex;
   flex-direction: column;
   margin: 1%;
+  color: $fontLightGrey;
 }
 #contact-input {
   height: 30px;
@@ -40,5 +42,6 @@
   height: 50px;
   width: 120px;
   font-size: 20px;
-  background: $white;
+  background: $mainColor;
+  color: $white;
 }
