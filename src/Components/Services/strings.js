@@ -26,4 +26,26 @@ export default {
         "Every business is different, thats why every marketing strategy should be different. We custom design every marketing strategy we make.",
     },
   ],
+  serviceItemArr: [
+    {
+      title: "SEARCH ENGINE OPTIMISATION",
+      description:
+        "To share the true vision of our clients, we first need to truly understand it. We believe there is no better way than through face to face meetings ",
+    },
+    {
+      title: "SEARCH ENGINE MARKETING",
+      description:
+        "Don't be limited by rigid marketing packages. We provide all services necessary to connect you with your target customers.",
+    },
+    {
+      title: "SOCIAL MEDIA MARKETING",
+      description:
+        "Our work speaks for itself, so if you don't need to market anymore, you can move on - hassle free!",
+    },
+    {
+      title: "EMAIL MARKETING",
+      description:
+        "Every business is different, thats why every marketing strategy should be different. We custom design every marketing strategy we make.",
+    },
+  ],
 };
