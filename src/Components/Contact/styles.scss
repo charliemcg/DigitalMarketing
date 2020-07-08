@@ -1,0 +1,49 @@
+@import "../../colors.scss";
+
+#contact-wrapper {
+  background-color: $mainColor;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#contact-form-wrapper {
+  flex: 3;
+}
+#contact-title-wrapper {
+  color: $white;
+  // margin: 10px;
+  margin: 1%;
+  font-size: 35px;
+}
+#contact-input-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  // margin: 10px;
+  margin: 1%;
+}
+#contact-input {
+  height: 30px;
+  // height: 200%;
+  // flex: 1;
+  font-size: 20px;
+}
+#contact-row {
+  display: flex;
+}
+#contact-textarea {
+  height: 100px;
+  resize: vertical;
+  font-size: 20px;
+}
+#contact-submit-wrapper {
+  flex: 2;
+  display: flex;
+  align-items: flex-end;
+  margin: 10px;
+}
+#contact-submit-btn {
+  height: 50px;
+  width: 120px;
+  font-size: 20px;
+  background: $white;
+}
