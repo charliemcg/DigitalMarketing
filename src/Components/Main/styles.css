@@ -1,0 +1,46 @@
+#main-wrapper {
+  position: relative;
+}
+
+#main-img {
+  width: 100%;
+}
+
+#main-overlay-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d36462), to(rgba(255, 255, 255, 0.5)));
+  background-image: linear-gradient(to bottom, #d36462, rgba(255, 255, 255, 0.5));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-quote {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  text-align: center;
+}
+
+#main-contact-btn {
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  height: 10%;
+  width: 15%;
+}
+/*# sourceMappingURL=styles.css.map */

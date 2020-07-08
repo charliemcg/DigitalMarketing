@@ -1,7 +1,7 @@
 import React from "react";
 
 import Header from "./Components/Header/";
-import Main from "./Components/Main";
+import Main from "./Components/Main/";
 import Services from "./Components/Services";
 import CaseStudies from "./Components/CaseStudies";
 import Testimonials from "./Components/Testimonials";
