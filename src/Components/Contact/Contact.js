@@ -35,7 +35,8 @@ export default function Contact() {
       : !validator.isEmail(emailRef.current.value) &&
         (newErrors = { ...newErrors, email: errors.emailInvalid });
     // phone
-    validator.isAlpha(phoneRef.current.value) &&
+    var regex = /^[0-9\s]*$/;
+    !regex.test(phoneRef.current.value) &&
       (newErrors = { ...newErrors, phone: errors.phoneInvalid });
     // message
     validator.isEmpty(messageRef.current.value, {
@@ -50,7 +51,13 @@ export default function Contact() {
     return (
       <div id="contact-input-wrapper">
         <label>{label}</label>
-        <input type={type} id="contact-input" ref={ref} maxLength="25" />
+        <input
+          type={type}
+          id="contact-input"
+          ref={ref}
+          maxLength="25"
+          style={formErrors[error] && { border: "solid 2px red" }}
+        />
         <div id="contact-error">{formErrors[error]}</div>
       </div>
     );
@@ -99,7 +106,12 @@ export default function Contact() {
         <div id="contact-row">
           <div id="contact-input-wrapper">
             <label>{strings.message}</label>
-            <textarea id="contact-textarea" ref={messageRef} maxLength="2500" />
+            <textarea
+              id="contact-textarea"
+              ref={messageRef}
+              maxLength="2500"
+              style={formErrors.message && { border: "solid 2px red" }}
+            />
             <div id="contact-error">{formErrors.message}</div>
           </div>
         </div>
