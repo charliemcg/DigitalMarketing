@@ -34,12 +34,28 @@
   font-weight: bold;
   font-size: 100px;
   text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-btn-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #main-contact-btn {
-  background: rgba(255, 255, 255, 0.5);
+  color: #444;
+  background: rgba(255, 255, 255, 0.7);
   font-size: 25px;
-  height: 10%;
-  width: 15%;
+  padding: 15px 30px 15px 30px;
+  border: solid 4px #444;
 }
 /*# sourceMappingURL=styles.css.map */
