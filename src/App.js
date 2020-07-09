@@ -22,6 +22,8 @@ function App() {
   );
 }
 
-const textStyling = { fontFamily: "Arial, Helvetica, sans-serif" };
+const textStyling = {
+  fontFamily: "Arial, Helvetica, sans-serif",
+};
 
 export default App;

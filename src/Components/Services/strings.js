@@ -1,3 +1,8 @@
+import seoLogo from "../../Assets/Search.png";
+import semLogo from "../../Assets/Marketing.png";
+import socialLogo from "../../Assets/Social.png";
+import mailLogo from "../../Assets/Mail.png";
+
 export default {
   nobodyKnowsYourBusiness:
     "Nobody knows your business better than you. You know exactly what makes your business special, and how well it can help your target clientele. If your target clients could see your business the way you do, using your business would be a no brainer.",
@@ -28,24 +33,28 @@ export default {
   ],
   serviceItemArr: [
     {
+      logo: seoLogo,
       title: "SEARCH ENGINE OPTIMISATION",
       description:
-        "Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tincidunt eros. Nulla pellentesque id mauris at pulvinar. Phasellus justo sem, luctus in metus vitae, maximus accumsan quam. Nulla facilisi. Morbi in laoreet turpis. Pellentesque quis arcu lorem. Vestibulum non lorem eget ipsum auctor dignissim a eget purus.",
     },
     {
+      logo: semLogo,
       title: "SEARCH ENGINE MARKETING",
       description:
-        "Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tincidunt eros. Nulla pellentesque id mauris at pulvinar. Phasellus justo sem, luctus in metus vitae, maximus accumsan quam. Nulla facilisi. Morbi in laoreet turpis. Pellentesque quis arcu lorem. Vestibulum non lorem eget ipsum auctor dignissim a eget purus.",
     },
     {
+      logo: socialLogo,
       title: "SOCIAL MEDIA MARKETING",
       description:
-        "Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tincidunt eros. Nulla pellentesque id mauris at pulvinar. Phasellus justo sem, luctus in metus vitae, maximus accumsan quam. Nulla facilisi. Morbi in laoreet turpis. Pellentesque quis arcu lorem. Vestibulum non lorem eget ipsum auctor dignissim a eget purus.",
     },
     {
+      logo: mailLogo,
       title: "EMAIL MARKETING",
       description:
-        "Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae tincidunt eros. Nulla pellentesque id mauris at pulvinar. Phasellus justo sem, luctus in metus vitae, maximus accumsan quam. Nulla facilisi. Morbi in laoreet turpis. Pellentesque quis arcu lorem. Vestibulum non lorem eget ipsum auctor dignissim a eget purus.",
     },
   ],
 };
