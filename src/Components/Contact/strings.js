@@ -8,4 +8,12 @@ export default {
   phone: "Phone",
   message: "Message",
   submit: "Submit",
+  errors: {
+    firstNameRequired: "First name required",
+    lastNameRequired: "Last name required",
+    emailRequired: "Email required",
+    emailInvalid: "Email invalid",
+    phoneInvalid: "Phone invalid",
+    messageRequired: "Message required",
+  },
 };

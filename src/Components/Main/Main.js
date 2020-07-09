@@ -9,7 +9,6 @@ export default function Main() {
     <div id="main-wrapper">
       <img src={skylineImg} alt={strings.skylineAlt} id="main-img" />
       <div id="main-overlay-wrapper">
-        {/* <div id="main-quote">"{strings.weMakePeople}"</div> */}
         <div id="main-quote">
           <Typewriter
             options={{
