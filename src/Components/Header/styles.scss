@@ -7,15 +7,23 @@
   justify-content: space-between;
   padding: 10px;
 }
-#header-nav-bar {
+#header-right {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
+  color: $white;
+  font-size: 20px;
+}
+#header-phone {
+  margin: 10px;
+}
+#header-navbar {
+  display: flex;
 }
 .header-link {
   margin-right: 10px;
   padding: 3px 7px 3px 7px;
   display: flex;
-  font-size: 20px;
   border-radius: 5px;
-  color: $white;
 }

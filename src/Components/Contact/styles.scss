@@ -1,12 +1,35 @@
 @import "../../colors.scss";
 
 #contact-wrapper {
-  // background-color: $mainColor;
-  background: $white;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact-ready {
+  font-weight: bold;
+  margin-top: 40px;
+}
+#contact-promo {
+  font-size: 80px;
+  margin: 20px;
+  padding: 0px 40px 0px 40px;
+}
+#contact-divider {
+  background-image: linear-gradient(
+    to left,
+    $white,
+    $white,
+    $mainColor,
+    $white,
+    $white
+  );
+  height: 1px;
+  width: 100%;
+  margin: 30px;
 }
 #contact-form-wrapper {
-  flex: 3;
+  width: 59%;
 }
 #contact-title-wrapper {
   color: $fontDarkGrey;
@@ -33,7 +56,6 @@
   font-size: 20px;
 }
 #contact-submit-wrapper {
-  flex: 2;
   display: flex;
   align-items: flex-end;
   margin: 10px;

@@ -20,6 +20,9 @@ const getContactRow = (contactDetails) => {
 export default function Contact() {
   return (
     <div id="contact-wrapper">
+      <div id="contact-ready">{strings.readyToGo}</div>
+      <div id="contact-promo">{strings.getAFree}</div>
+      <div id="contact-divider" />
       <div id="contact-form-wrapper">
         <div id="contact-title-wrapper">{strings.getInTouch}</div>
         {getContactRow([
