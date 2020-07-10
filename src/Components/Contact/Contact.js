@@ -35,14 +35,17 @@ export default function Contact() {
       : !validator.isEmail(emailRef.current.value) &&
         (newErrors = { ...newErrors, email: errors.emailInvalid });
     // phone
-    var regex = /^[0-9\s]*$/;
+    let regex = /^[0-9\s]*$/;
     !regex.test(phoneRef.current.value) &&
       (newErrors = { ...newErrors, phone: errors.phoneInvalid });
     // message
     validator.isEmpty(messageRef.current.value, {
       ignore_whitespace: true,
     }) && (newErrors = { ...newErrors, message: errors.messageRequired });
-    updateErrors(newErrors);
+    //send email or display errors
+    Object.keys(newErrors).length === 0
+      ? alert("TODO connect to email server")
+      : updateErrors(newErrors);
   };
 
   // an individual form input
@@ -50,7 +53,10 @@ export default function Contact() {
     const { label, type, ref, error } = contactDetails;
     return (
       <div id="contact-input-wrapper">
-        <label>{label}</label>
+        <label>
+          {label}
+          {label !== strings.phone && <span style={{ color: "red" }}>*</span>}
+        </label>
         <input
           type={type}
           id="contact-input"
@@ -105,7 +111,10 @@ export default function Contact() {
         ])}
         <div id="contact-row">
           <div id="contact-input-wrapper">
-            <label>{strings.message}</label>
+            <label>
+              {strings.message}
+              <span style={{ color: "red" }}>*</span>
+            </label>
             <textarea
               id="contact-textarea"
               ref={messageRef}
