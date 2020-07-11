@@ -10,7 +10,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
+  padding: 1vw;
+}
+
+#header-logo {
+  height: 20vw;
 }
 
 #header-right {
@@ -28,25 +32,33 @@
       -ms-flex-align: end;
           align-items: flex-end;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 #header-phone {
-  margin: 10px;
+  margin: 1vw;
 }
 
 #header-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 10%;
 }
 
 .header-link {
-  margin-right: 10px;
-  padding: 3px 7px 3px 7px;
+  margin-right: 1vw;
+  padding: 0.1vw 0.3vw 0.1vw 0.3vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  font-size: 1.6vw;
 }
 /*# sourceMappingURL=styles.css.map */

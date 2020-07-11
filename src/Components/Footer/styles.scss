@@ -4,57 +4,53 @@
   background: $mainColor;
   display: flex;
   color: $white;
-  padding-top: 70px;
+  padding-top: 4vw;
+  font-size: 1.2vw;
 }
 #footer-left {
   flex: 1;
   display: flex;
   flex-direction: row;
-  margin: 10px;
+  margin: 0.8vw;
 }
 #footer-social-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  margin-left: 0.8vw;
 }
-#footer-facebook,
-#footer-linkedin {
-  color: $white;
-  background: blue;
-  width: 25px;
-  height: 25px;
+#footer-social {
+  width: 1.6vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  margin-top: 10px;
+  margin-top: 0.5vw;
 }
 #footer-details {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-left: 15px;
+  margin-left: 0.7vw;
 }
 #footer-phone {
-  margin: 0px 10px 0px 10px;
+  margin: 0vw 0.5vw 0vw 0.5vw;
 }
 #footer-copyright {
-  margin: 10px 10px 0px 10px;
+  margin: 0.5vw 0.5vw 0vw 0.5vw;
 }
 #footer-plug {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin: 10px;
+  margin: 0.5vw;
 }
 #footer-right {
   flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin: 10px;
+  margin: 0.5vw;
 }
 #footer-logo {
-  height: 50px;
+  height: 3vw;
 }

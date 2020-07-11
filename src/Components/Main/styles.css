@@ -12,8 +12,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d36462), to(rgba(255, 255, 255, 0.5)));
-  background-image: linear-gradient(to bottom, #d36462, rgba(255, 255, 255, 0.5));
+  background: -webkit-gradient(linear, left top, left bottom, from(#d36462), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to bottom, #d36462, rgba(255, 255, 255, 0.5));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +32,7 @@
 #main-quote {
   color: #fff;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 6.5vw;
   text-align: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -54,8 +54,14 @@
 #main-contact-btn {
   color: #444;
   background: rgba(255, 255, 255, 0.7);
-  font-size: 25px;
-  padding: 15px 30px 15px 30px;
-  border: solid 4px #444;
+  font-size: 1.5vw;
+  padding: 1vw 2vw 1vw 2vw;
+  border: solid 0.3vw #777;
+  cursor: pointer;
+}
+
+#main-contact-btn:hover {
+  font-size: 1.6vw;
+  border-color: #444;
 }
 /*# sourceMappingURL=styles.css.map */

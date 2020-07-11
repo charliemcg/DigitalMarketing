@@ -10,19 +10,19 @@
 #services-third-paragraph {
   width: 80%;
   margin: 2%;
-  font-size: 18px;
+  font-size: 1.2vw;
   text-align: center;
-  line-height: 1.8;
+  line-height: 1.6;
   color: $fontLightGrey;
 }
 #services-second-paragraph {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 4vw;
   color: $fontDarkGrey;
 }
 #services-carousel {
   width: 100%;
-  height: 30vh;
+  height: 17vw;
   background: $white;
   display: flex;
   flex-direction: column;
@@ -32,18 +32,19 @@
 #services-headline {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 40%;
+  padding-bottom: 1.5vw;
   color: $fontDarkGrey;
-  font-size: 25px;
-  flex: 1;
+  font-size: 1.6vw;
+  flex: 2;
 }
 #services-description {
   width: 40%;
   color: $fontLightGrey;
-  font-size: 20px;
-  line-height: 1.8;
-  flex: 2;
+  font-size: 1.2vw;
+  line-height: 1.5;
+  flex: 3;
 }
 #service-items-wrapper {
   width: 100%;
@@ -59,12 +60,17 @@
   align-items: center;
   margin: 1%;
   padding: 1%;
-  border: solid 2px $mainColor;
+  border: solid 0.2vw $mainColor;
+}
+#service-item-img {
+  width: 7vw;
 }
 #service-item-title {
   color: $fontDarkGrey;
   padding: 5% 0 5% 0;
+  font-size: 1.7vw;
 }
 #service-item-description {
   color: $fontLightGrey;
+  font-size: 1.2vw;
 }

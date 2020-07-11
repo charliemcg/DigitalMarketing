@@ -19,7 +19,16 @@ export default function Main() {
           />
         </div>
         <div id="main-btn-wrapper">
-          <button id="main-contact-btn">{strings.getInTouch}</button>
+          <button
+            id="main-contact-btn"
+            onClick={() =>
+              document
+                .getElementById("contact-wrapper")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            {strings.getInTouch}
+          </button>
         </div>
       </div>
     </div>

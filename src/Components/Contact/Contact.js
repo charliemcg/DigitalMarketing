@@ -50,16 +50,16 @@ export default function Contact() {
 
   // an individual form input
   const getInput = (contactDetails) => {
-    const { label, type, ref, error } = contactDetails;
+    const { label, type, ref, error } = contactDetails.e;
     return (
-      <div id="contact-input-wrapper">
+      <div key={contactDetails.i} id="contact-input-wrapper">
         <label>
           {label}
           {label !== strings.phone && <span style={{ color: "red" }}>*</span>}
         </label>
         <input
           type={type}
-          id="contact-input"
+          className="contact-input"
           ref={ref}
           maxLength="25"
           style={formErrors[error] && { border: "solid 2px red" }}
@@ -71,7 +71,11 @@ export default function Contact() {
 
   // a row of the contact form
   const getContactRow = (contactDetails) => {
-    return <div id="contact-row">{contactDetails.map((e) => getInput(e))}</div>;
+    return (
+      <div id="contact-row">
+        {contactDetails.map((e, i) => getInput({ e, i }))}
+      </div>
+    );
   };
 
   return (
