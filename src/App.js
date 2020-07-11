@@ -10,7 +10,7 @@ import Footer from "./Components/Footer/";
 
 function App() {
   return (
-    <div style={textStyling}>
+    <div style={universalStyles}>
       <Header />
       <Main />
       <Services />
@@ -22,7 +22,7 @@ function App() {
   );
 }
 
-const textStyling = {
+const universalStyles = {
   fontFamily: "Arial, Helvetica, sans-serif",
   minWidth: 800,
 };
