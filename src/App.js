@@ -12,18 +12,19 @@ function App() {
   return (
     <div style={textStyling}>
       <Header />
-      <Main />
+      {/* <Main />
       <Services />
       <Quote />
       <Testimonials />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
 
 const textStyling = {
   fontFamily: "Arial, Helvetica, sans-serif",
+  minWidth: 800,
 };
 
 export default App;
