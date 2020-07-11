@@ -13,11 +13,11 @@ function App() {
     <div style={textStyling}>
       <Header />
       <Main />
-      {/* <Services />
+      <Services />
       <Quote />
       <Testimonials />
-      <Contact />
-      <Footer /> */}
+      {/* <Contact /> */}
+      <Footer />
     </div>
   );
 }
