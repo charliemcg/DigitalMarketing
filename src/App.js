@@ -12,8 +12,8 @@ function App() {
   return (
     <div style={textStyling}>
       <Header />
-      {/* <Main />
-      <Services />
+      <Main />
+      {/* <Services />
       <Quote />
       <Testimonials />
       <Contact />

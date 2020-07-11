@@ -21,24 +21,24 @@
 #main-quote {
   color: $white;
   font-weight: bold;
-  font-size: 6.5vw;
+  font-size: 7.5vw;
   text-align: center;
-  flex: 1;
+  flex: 3;
   display: flex;
   align-items: center;
 }
 #main-btn-wrapper {
-  flex: 1;
+  flex: 2;
 }
 #main-contact-btn {
   color: $fontDarkGrey;
   background: rgba(255, 255, 255, 0.7);
-  font-size: 1.5vw;
+  font-size: 1.3rem;
   padding: 1vw 2vw 1vw 2vw;
   border: solid 0.3vw $fontLightGrey;
   cursor: pointer;
   &:hover {
-    font-size: 1.6vw;
+    font-size: 1.4rem;
     border-color: $fontDarkGrey;
   }
 }
