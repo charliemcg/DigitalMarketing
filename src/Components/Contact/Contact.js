@@ -43,9 +43,9 @@ export default function Contact() {
       ignore_whitespace: true,
     }) && (newErrors = { ...newErrors, message: errors.messageRequired });
     //send email or display errors
-    Object.keys(newErrors).length === 0
-      ? alert("TODO connect to email server")
-      : updateErrors(newErrors);
+    Object.keys(newErrors).length === 0 &&
+      alert("TODO connect to email server");
+    updateErrors(newErrors);
   };
 
   // an individual form input
