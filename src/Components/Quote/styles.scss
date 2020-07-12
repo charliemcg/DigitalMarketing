@@ -1,4 +1,5 @@
 @import "../../colors.scss";
+@import "../../constants.scss";
 
 #quote-relativity-wrapper {
   position: relative;
@@ -37,4 +38,9 @@
 }
 #quote-ceo-img {
   height: 27vw;
+}
+@media only screen and (max-width: $mobileWidth) {
+  #quote-relativity-wrapper {
+    display: none;
+  }
 }

@@ -28,6 +28,7 @@
   font-weight: bold;
   font-size: 3.5rem;
   color: #444;
+  text-align: center;
 }
 
 #services-carousel {
@@ -148,6 +149,44 @@
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  #services-headline {
+    font-size: 1rem;
+  }
+  #services-description {
+    font-size: 0.9rem;
+  }
+  #service-items-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 90%;
+  }
+  #service-item-img-wrapper {
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #service-item-img {
+    width: 60%;
+  }
+  #service-item-details {
+    height: 80%;
+  }
+  #service-item-title {
+    padding: 2% 0 2% 0;
+    font-size: 1.3rem;
+  }
+  #service-item-description {
+    font-size: 0.9rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

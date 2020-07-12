@@ -1,4 +1,5 @@
 @import "../../colors.scss";
+@import "../../constants.scss";
 
 #main-wrapper {
   position: relative;
@@ -40,5 +41,14 @@
   &:hover {
     font-size: 1.4rem;
     border-color: $fontDarkGrey;
+  }
+}
+@media only screen and (max-width: $mobileWidth) {
+  #main-contact-btn {
+    padding: 2vw 4vw 2vw 4vw;
+    font-size: 1rem;
+    &:hover {
+      font-size: 1.1rem;
+    }
   }
 }

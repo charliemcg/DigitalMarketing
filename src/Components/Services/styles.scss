@@ -1,4 +1,5 @@
 @import "../../colors.scss";
+@import "../../constants.scss";
 
 #services-wrapper {
   display: flex;
@@ -19,6 +20,7 @@
   font-weight: bold;
   font-size: 3.5rem;
   color: $fontDarkGrey;
+  text-align: center;
 }
 #services-carousel {
   width: 100%;
@@ -84,9 +86,39 @@
   margin: 0% 2% 7% 2%;
   height: 75%;
 }
-@media only screen and (max-width: 1130px) {
+@media only screen and (max-width: $smallDesktop) {
   #service-items-wrapper {
     flex-direction: column;
     max-width: 40%;
+  }
+}
+@media only screen and (max-width: $mobileWidth) {
+  #services-headline {
+    font-size: 1rem;
+  }
+  #services-description {
+    font-size: 0.9rem;
+  }
+  #service-items-wrapper {
+    flex-direction: column;
+    max-width: 90%;
+  }
+  #service-item-img-wrapper {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  #service-item-img {
+    width: 60%;
+  }
+  #service-item-details {
+    height: 80%;
+  }
+  #service-item-title {
+    padding: 2% 0 2% 0;
+    font-size: 1.3rem;
+  }
+  #service-item-description {
+    font-size: 0.9rem;
   }
 }

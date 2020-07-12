@@ -55,4 +55,10 @@
 #quote-ceo-img {
   height: 27vw;
 }
+
+@media only screen and (max-width: 415px) {
+  #quote-relativity-wrapper {
+    display: none;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,5 @@
 @import "../../colors.scss";
+@import "../../constants.scss";
 
 #footer-wrapper {
   background: $mainColor;
@@ -53,4 +54,25 @@
 }
 #footer-logo {
   width: 20%;
+}
+@media only screen and (max-width: $mobileWidth) {
+  #footer-wrapper {
+    flex-direction: column;
+  }
+  #footer-social-wrapper {
+    display: none;
+  }
+  #footer-copyright {
+    margin: 0% 0% 1.5% 3%;
+  }
+  #footer-plug {
+    justify-content: flex-start;
+    margin-left: 3%;
+  }
+  #footer-right {
+    justify-content: flex-start;
+  }
+  #footer-logo {
+    width: 70%;
+  }
 }

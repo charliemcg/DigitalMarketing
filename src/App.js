@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 import Header from "./Components/Header/";
 import Main from "./Components/Main/";
@@ -10,7 +11,7 @@ import Footer from "./Components/Footer/";
 
 function App() {
   return (
-    <div style={universalStyles}>
+    <div id="universal-styles">
       <Header />
       <Main />
       <Services />
@@ -21,10 +22,5 @@ function App() {
     </div>
   );
 }
-
-const universalStyles = {
-  fontFamily: "Arial, Helvetica, sans-serif",
-  minWidth: 800,
-};
 
 export default App;
