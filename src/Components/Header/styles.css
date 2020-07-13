@@ -34,6 +34,9 @@
           align-items: flex-end;
   color: #fff;
   font-size: 1.4rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #header-phone {
@@ -63,12 +66,19 @@
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 415px) {
-  #header-logo {
-    width: 100%;
+@media only screen and (max-width: 800px) {
+  #header-navbar {
+    display: none;
   }
+}
+
+@media only screen and (max-width: 550px) {
   #header-right {
     display: none;
+  }
+  #header-logo {
+    width: 100%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */

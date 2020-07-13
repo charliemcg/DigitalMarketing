@@ -23,7 +23,7 @@
   text-align: center;
 }
 #services-carousel {
-  width: 100%;
+  min-width: 0px;
   height: 100%;
   padding: 3% 0% 6% 0%;
   background: $white;
@@ -50,9 +50,12 @@
 }
 #service-items-wrapper {
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  margin: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.2rem;
   text-align: center;
+  width: 95%;
 }
 #service-item-wrapper {
   flex: 1;
@@ -60,9 +63,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1%;
   padding: 1%;
-  border: solid 0.2vw $mainColor;
+  border: solid 3px $mainColor;
 }
 #service-item-img-wrapper {
   height: 30%;
@@ -88,8 +90,23 @@
 }
 @media only screen and (max-width: $smallDesktop) {
   #service-items-wrapper {
-    flex-direction: column;
-    max-width: 40%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.9rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #service-items-wrapper {
+    grid-gap: 1.6rem;
+  }
+  #services-headline,
+  #services-description {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #service-items-wrapper {
+    grid-template-columns: 1fr;
+    width: 90%;
   }
 }
 @media only screen and (max-width: $mobileWidth) {
@@ -98,10 +115,6 @@
   }
   #services-description {
     font-size: 0.9rem;
-  }
-  #service-items-wrapper {
-    flex-direction: column;
-    max-width: 90%;
   }
   #service-item-img-wrapper {
     height: 20%;

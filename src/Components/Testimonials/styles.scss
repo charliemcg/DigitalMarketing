@@ -3,8 +3,8 @@
 
 #testimonials-wrapper {
   background: $mainColor;
-  color: $white;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 #testimonial-item {
   flex: 1;
@@ -32,10 +32,13 @@
   font-size: 1.2rem;
   margin-bottom: 4%;
 }
-@media only screen and (max-width: $mobileWidth) {
+@media only screen and (max-width: 800px) {
   #testimonials-wrapper {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
   }
+}
+@media only screen and (max-width: $mobileWidth) {
   #testimonial-logo-wrapper {
     margin-top: 8%;
     width: 25%;

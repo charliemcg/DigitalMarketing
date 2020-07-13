@@ -10,7 +10,9 @@ export default function Services() {
       <div id="services-first-paragraph">{strings.nobodyKnowsYourBusiness}</div>
       <div id="services-second-paragraph">{strings.thatsWhatWeDo}</div>
       <div id="services-third-paragraph">{strings.weCreateCompletely}</div>
-      <Carousel />
+      <div style={{ width: "100%" }}>
+        <Carousel />
+      </div>
       <div id="service-items-wrapper">
         {strings.serviceItemArr.map((service, i) => (
           <ServiceItem key={i} details={service} />

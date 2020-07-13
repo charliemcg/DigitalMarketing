@@ -107,6 +107,22 @@
   width: 20%;
 }
 
+@media only screen and (max-width: 800px) {
+  #footer-left {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+  #footer-plug {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+  #footer-logo {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 415px) {
   #footer-wrapper {
     -webkit-box-orient: vertical;

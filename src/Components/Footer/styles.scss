@@ -55,6 +55,17 @@
 #footer-logo {
   width: 20%;
 }
+@media only screen and (max-width: 800px) {
+  #footer-left {
+    flex: 4;
+  }
+  #footer-plug {
+    flex: 4;
+  }
+  #footer-logo {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: $mobileWidth) {
   #footer-wrapper {
     flex-direction: column;
